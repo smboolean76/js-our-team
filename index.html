@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS our team</title>
+    </head>
+    <body>
+        
+        <ul class="team">
+            <!-- <li class="employee">
+                <div class="employee-avatar">
+                    samuele.jpg
+                </div>
+                <h3 class="employee-name">Samuele</h3>
+                <p class="employee-role">CEO</p>
+            </li> -->
+        </ul>
+
+        <!-- <template id="template-employee">
+            <li class="employee">
+                <div class="employee-avatar">
+                    samuele.jpg
+                </div>
+                <h3 class="employee-name">Samuele</h3>
+                <p class="employee-role">CEO</p>
+            </li>
+        </template> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script id="template-employee" type="text/x-handlebars-template">
+            <li class="employee">
+                <div class="employee-avatar">{{avatar}}</div>
+                {{#if name}}
+                <h3 class="employee-name">{{name}}</h3>
+                {{/if}}
+                <p class="employee-role">{{role}}</p>
+            </li>
+        </script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
